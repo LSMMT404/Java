@@ -10,12 +10,15 @@ import java.util.Arrays;
  */
 public class AbsoluteMin {
     public static void main(String[] args) {
-        int[] numbers = new int[]{3, -10, -2};
+    	int[] testnums = {4, 0, 16};
+    	assert absMin(testnums) == 0;
+    	
+        int[] numbers = {3, -10, -2};
         System.out.println("absMin(" + Arrays.toString(numbers) + ") = " + absMin(numbers));
     }
 
     /**
-     * get the value, it's absolute value is min
+     * get the value, returns the absolute min value min
      *
      * @param numbers contains elements
      * @return the absolute min value
